@@ -2,7 +2,7 @@
 #
 
 FROM ubuntu:14.04
-MAINTAINER Sharoon Thomas <sharoon.thomas@openlabs.co.in>
+MAINTAINER Prakash Pandey <prakash.pandey@fulfil.io>
 
 # Update package repository
 RUN apt-get update
