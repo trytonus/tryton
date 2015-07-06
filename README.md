@@ -7,11 +7,11 @@ Tryton. The build is based on the `ubuntu` base image provided by docker.
 
 Fetch the repository from docker
 
-    docker pull openlabs/tryton
+    docker pull fulfilio/tryton
 
 Create a new container using the image
 
-    docker run -d -P 8000 openlabs/tryton
+    docker run -d -P 8000 fulfilio/tryton
 
 * The `-d` option indicates that the container should be run in daemon
   mode.
@@ -39,7 +39,7 @@ The container originally did support SSH but was subsequently removed.
 
 You can access the docker container and work from within it.::
 
-    docker run -i -t openlabs/tryton /bin/bash
+    docker run -i -t fulfilio/tryton /bin/bash
 
 On execution of the command a new prompt within the container should be
 available to you. Remember that trytond (default service) is not started
