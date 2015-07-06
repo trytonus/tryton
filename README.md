@@ -64,8 +64,8 @@ make your setup work with postgres and install the sale module.
     # Trytond 3.4 with Sale module and Postgres
     #
 
-    FROM openlabs/tryton:3.4
-    MAINTAINER Sharoon Thomas <sharoon.thomas@openlabs.co.in>
+    FROM fulfilio/tryton:3.4
+    MAINTAINER Prakash Pandey <prakash.pandey@fulfil.io>
 
     # Setup psycopg2 since you want to connect to postgres
     # database
@@ -94,6 +94,6 @@ This image was built at [Openlabs](http://www.openlabs.co.in).
 
 ## Professional Support
 
-This image is professionally supported by [Openlabs](http://www.openlabs.co.in).
+This image is professionally supported by [Fulfil.IO Inc.](https://www.fulfil.io).
 If you are looking for on-site teaching or consulting support, contact our
-[sales](mailto:sales@openlabs.co.in) and [support](mailto:support@openlabs.co.in) teams.
+[sales](mailto:sales@fulfil.io) and [support](mailto:support@fulfil.io) teams.
