@@ -9,8 +9,9 @@ RUN apt-get update
 
 # Setup environment and UTF-8 locale
 ENV DEBIAN_FRONTEND noninteractive
-ENV LANGUAGE en_US.UTF-8
+RUN locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
 # Install setuptools to install pip
