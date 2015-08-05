@@ -14,13 +14,9 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-# Install setuptools to install pip
-RUN apt-get -y -q install python-setuptools
-# setuptools sucks! install pip
-RUN easy_install pip
-
 # Install latest trytond in 3.4.x series
-RUN apt-get -y -q install python-lxml
+RUN apt-get -y -q install python-lxml curl
+RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | python
 RUN pip install 'trytond>=3.4,<3.5'
 
 # Copy trytond.conf from local folder to /etc/trytond.conf
