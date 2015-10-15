@@ -17,7 +17,7 @@ ENV LC_ALL en_US.UTF-8
 # Install latest trytond in 3.4.x series
 RUN apt-get -y -q install python-lxml curl
 RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | python
-RUN pip install 'trytond>=3.4.5,<3.5'
+RUN pip install 'trytond>=3.6,<3.7'
 
 # Copy trytond.conf from local folder to /etc/trytond.conf
 ADD trytond.conf /etc/trytond.conf
